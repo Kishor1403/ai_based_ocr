@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Modal, Nav, Tab, Form, Button, Tabs } from "react-bootstrap";
+import { Modal, Tab, Tabs } from "react-bootstrap";
 import { useAuth } from "../context/AuthProvider";
 
 export const AuthModal = () => {
