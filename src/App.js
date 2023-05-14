@@ -1,29 +1,27 @@
 import {
-  FileUploadHandler,
+  AuthModal,
   Footer,
   HeroCarousel,
-  ImageInput,
+  Loader,
   NavbarMenu,
   ServicesInfo,
   TeamInfo,
   TextToOCRHandler,
-  VideoUploadHandler,
 } from "./components";
-import logo from "./logo.svg";
-import "./styles/App.css";
+import { useAuth } from "./context/AuthProvider";
 
 function App() {
+  const { isAuthenticated, isLoading } = useAuth();
   return (
     <div className="App">
+      {isLoading && <Loader />}
       <NavbarMenu />
       <HeroCarousel />
-      {/* <FileUploadHandler /> */}
-      {/* <VideoUploadHandler /> */}
-      <TextToOCRHandler />
+      {!isAuthenticated && <AuthModal />}
+      {isAuthenticated && <TextToOCRHandler />}
       <ServicesInfo />
       <TeamInfo />
       <Footer />
-      {/* <ImageInput /> */}
     </div>
   );
 }

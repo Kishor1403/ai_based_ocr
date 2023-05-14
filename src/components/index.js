@@ -6,3 +6,5 @@ export { ServicesInfo } from "./ServicesInfo";
 export { TeamInfo } from "./TeamInfo";
 export { Footer } from "./Footer";
 export { TextToOCRHandler } from "./TextToOCRHandler";
+export { AuthModal } from "./AuthModal";
+export { Loader } from "./Loader";
