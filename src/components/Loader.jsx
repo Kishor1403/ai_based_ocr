@@ -5,7 +5,7 @@ export function Loader() {
   return (
     <div
       className="d-flex justify-content-center align-items-center"
-      style={{ height: "100vh", backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+      style={{ height: "100vh", backgroundColor: "rgba(0, 0, 0, 0.05)" }}
     >
       <div className="spinner-border text-light" role="status">
         <Spinner animation="border" role="status" variant="light"></Spinner>

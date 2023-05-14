@@ -11,10 +11,10 @@ import {
 import { useAuth } from "./context/AuthProvider";
 
 function App() {
-  const { isAuthenticated, isLoading } = useAuth();
+  const { isAuthenticated, isLoading, isModalOpen } = useAuth();
   return (
     <div className="App">
-      {isLoading && <Loader />}
+      {(isLoading || isModalOpen) && <Loader />}
       <NavbarMenu />
       <HeroCarousel />
       {!isAuthenticated && <AuthModal />}

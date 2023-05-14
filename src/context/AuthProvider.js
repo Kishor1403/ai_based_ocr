@@ -64,6 +64,9 @@ export const AuthProvider = ({ children }) => {
       alert(error.message);
     } finally {
       setIsLoading(false);
+      closeModal();
+      updateAuthForm("email", "");
+      updateAuthForm("password", "");
     }
   };
 
@@ -93,6 +96,9 @@ export const AuthProvider = ({ children }) => {
       alert(error.message);
     } finally {
       setIsLoading(false);
+      closeModal();
+      updateAuthForm("email", "");
+      updateAuthForm("password", "");
     }
   };
 

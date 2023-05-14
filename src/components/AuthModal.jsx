@@ -6,7 +6,6 @@ export const AuthModal = () => {
   const {
     isModalOpen,
     closeModal,
-    openModal,
     switchAuthForm,
     register,
     login,
@@ -24,7 +23,6 @@ export const AuthModal = () => {
     } else {
       register(formData.email, formData.password);
     }
-    closeModal();
   };
 
   useEffect(() => {
