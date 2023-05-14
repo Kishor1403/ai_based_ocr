@@ -34,7 +34,6 @@ export const AuthProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [state, dispatch] = useReducer(authReducer, initialAuthState);
   const openModal = () => {
-    console.log("open modal");
     dispatch({ type: "OPEN_MODAL" });
   };
 
@@ -114,8 +113,6 @@ export const AuthProvider = ({ children }) => {
       }
     });
   }, []);
-
-  console.log(state);
 
   return (
     <AuthContext.Provider

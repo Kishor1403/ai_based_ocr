@@ -13,7 +13,7 @@ const services = [
   {
     id: 3,
     title: "Great Accuracy!",
-    info: "text with different handwriting can be recognized upto 90%-92% of Accuracy.",
+    info: "Text with different handwriting can be recognized upto 90%-92% of Accuracy.",
   },
 ];
 export const ServicesInfo = () => {
@@ -30,7 +30,7 @@ export const ServicesInfo = () => {
           {services.map((service) => {
             return (
               <div
-                className="col-sm-12 col-lg-4 col-md-4 col-12"
+                className="col-sm-12 col-lg-4 col-md-4 col-12 text-center"
                 data-aos="zoom-in"
               >
                 <div className="card" style={{ height: "14rem" }}>
