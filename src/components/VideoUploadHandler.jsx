@@ -12,7 +12,7 @@ export const VideoUploadHandler = ({ sendFileToOCR, isLoading }) => {
 
   const startCamera = () => {
     navigator.mediaDevices
-      .getUserMedia({ video: true })
+      .getUserMedia({ video: { facingMode: "environment" } }) 
       .then((stream) => {
         if (videoRef.current) {
           videoRef.current.srcObject = stream;
