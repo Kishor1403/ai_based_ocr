@@ -18,7 +18,7 @@ export const TextToOCRHandler = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "https://app.nanonets.com/api/v2/OCR/Model/1b103ab7-bb5d-496c-93b2-ad3bce96a3d6/LabelFile/?async=false",
+        "https://app.nanonets.com/api/v2/OCR/Model/12278b5b-0a9e-45dc-8d0f-020c1145de06/LabelFile/?async=false",
         data,
         {
           headers: {
